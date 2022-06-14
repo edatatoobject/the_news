@@ -3,7 +3,6 @@ class News {
   final String name;
   final String imageUrl;
   final DateTime date;
-  final bool watched;
 
-  News(this.id, this.name, this.imageUrl, this.date, this.watched);
+  News(this.id, this.name, this.imageUrl, this.date);
 }

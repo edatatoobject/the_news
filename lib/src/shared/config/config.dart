@@ -6,6 +6,7 @@ import 'package:injectable/injectable.dart';
 @singleton
 class Config {
   final String apiKey;
+  String url = "https://newsapi.org/v2";
 
   Config(this.apiKey);
 
