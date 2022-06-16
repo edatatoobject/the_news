@@ -5,7 +5,6 @@ import 'src/shared/dependency_injection/injectable_configuration.dart';
 
 void main() async {
   configureDependencies();
-  await Future.delayed(Duration(milliseconds: 500));
   runApp(const MyApp());
 }
 

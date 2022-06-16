@@ -14,5 +14,6 @@ import 'injectable_configuration.config.dart';
   )
 
   void configureDependencies() { 
-    $initGetIt(sl);
+    var env = const String.fromEnvironment('ENV', defaultValue: 'dev');
+    $initGetIt(sl, environment: env);
   }

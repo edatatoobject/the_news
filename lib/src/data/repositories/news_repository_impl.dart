@@ -6,6 +6,8 @@ import 'package:the_news/src/domain/repositories/news_repository.dart';
 import 'package:the_news/src/shared/config/config.dart';
 import 'package:the_news/src/shared/dependency_injection/injectable_configuration.dart';
 
+@dev
+@Injectable(as: NewsRepository)
 class NewsRepositoryImpl implements NewsRepository {
   @override
   Future<List<News>> fetchNews({int page = 0}) async {
