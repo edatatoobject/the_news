@@ -9,9 +9,14 @@ class NewsTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Row(children: [
-        Text(news.name)
-      ]),
+      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(children: [
+          CircleAvatar(child: Image.network(news.imageUrl),),
+          Text(news.name),
+        ]),
+      ),
     );
   }
 }
